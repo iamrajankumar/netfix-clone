@@ -1,0 +1,149 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   width: 100%;
+   background-color: #0c111b;
+   position: relative;
+   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.navbar {
+   width: 100%;
+   height: 15%;
+   position: fixed;
+   top: 0;
+   left: 0;
+   padding: 0 4%;
+   background: #0c111b;
+   z-index: 9;
+   display: flex;
+   align-items: center;
+}
+
+.nav-links {
+   margin-top: 10px;
+   display: flex;
+   list-style: none;
+}
+
+.nav-items a {
+   text-decoration: none;
+   margin-left: 20px;
+   text-transform: capitalize;
+   color: #fff;
+   opacity: 0.9;
+}
+
+.right-container {
+   display: block;
+   margin-left: auto;
+}
+.search-box {
+   border: none;
+   border-bottom: 1px solid #aaa;
+   background: transparent;
+   outline: none;
+   height: 30px;
+   color: #fff;
+   width: 250px;
+   text-transform: capitalize;
+   font-size: 16px;
+   font-weight: 500;
+   transition: .5s;
+}
+
+.search-box:focus {
+   width: 400px;
+   border-color: aqua;
+}
+
+.button {
+   background: #1f80e0;
+   height: 30px;
+   padding: 0 20px;
+   color: #fff;
+   border-radius: 5px;
+   border: none;
+   outline: none;
+   text-transform: uppercase;
+   font-size: 12px;
+   font-weight: 700;
+   margin: 0 12px;
+}
+
+.login {
+   color: #fff;
+   opacity: 0.9;
+   text-transform: uppercase;
+   font-size: 15px;
+   font-weight: 700;
+   text-decoration: none;
+}
+
+.container{
+   padding-top: 118px;
+   margin-left: 84%;
+   position:relative;
+}
+#leave{
+   background: #b01fe0;
+   height: 30px;
+   color: #fff;
+   border-radius: 5px;
+   border: none;
+   outline: none;
+   text-transform: uppercase;
+   font-size: 12px;
+   font-weight: 700;
+   position: relative;
+}
+#leave:hover{
+   transform: scale(1.1);
+   background-color: aqua;
+}
+
+.moviestype{
+   background-color: black;
+}
+
+
+#movieList {
+   display: flex;
+   color: aliceblue;
+   padding-right: 0;
+   padding-left: 0px;
+   position: relative;
+   justify-content: center;
+   flex-wrap: wrap;
+}
+
+#movieList .movie {
+   margin: 20px;
+   padding-top: 40px;
+}
+
+#movieList .movie-img {
+   height: 340px;
+
+}
+
+#movieList .movie-img img {
+   height: 100%;
+   border-radius: 15px;
+
+}
+
+#movieList .movie-img img:hover {
+   transform: scale(1.1);
+}
+
+#movieList .movie-name {
+   color: aliceblue;
+   font-size: medium;
+   font-weight: bold;
+   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

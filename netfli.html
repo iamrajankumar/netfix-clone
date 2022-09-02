@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Disney Plus Hotstar</title>
+    <link rel="stylesheet" href="./stly.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <img src="./disney-hotstar-logo-dark.svg" class="logo" alt="">
+        <ul class="nav-links">
+            <li class="nav-items"><a href="#">TV</a></li>
+            <li class="nav-items"><a href="#">Movies</a></li>
+            <li class="nav-items"><a href="#">Sports</a></li>
+            <li class="nav-items"><a href="#">Disney+</a></li>
+        </ul>
+
+        <div class="right-container">
+            <input type="text" class="search-box" placeholder="search">
+            <button class="button">subscribe</button>
+            <a href="#" class="login">login</a>
+        </div>
+    </nav>
+    <div class="container">
+        <select id="leave" onchange="leaveChange()">
+            <option value="Bollywood" class="moviestype">Bollywood</option>
+            <option value="Hollywood" class="moviestype">Hollywood</option>
+            <option value="Tollywood" class="moviestype">Tollywood</option>
+
+          </select>
+    </div>
+        <div>
+            <ul id="movieList"></ul>
+        </div>
+
+    <script src="./netfli.js"></script>
+</body>
+
+</html>
